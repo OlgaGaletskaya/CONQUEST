@@ -180,7 +180,7 @@ body {
   justify-content: space-between;
   align-items: center;
   gap: 0;
-  height: calc(100vh - 80px);
+  height: 769px;
   font-weight: 300;
   font-size: 14px;
   line-height: 21px;
@@ -215,6 +215,10 @@ body {
   width: 56%;
   position: relative;
   z-index: 2;
+}
+.main__img img {
+  margin-top: -24px;
+  height: calc(100% + 48px);
 }
 .main__price, .main__diameter {
   position: absolute;
@@ -373,6 +377,7 @@ body {
   justify-content: space-between;
   align-items: center;
   gap: 0;
+  position: relative;
   font-weight: 400;
   font-size: 16px;
   line-height: 27px;
@@ -382,6 +387,16 @@ body {
   display: grid;
   gap: 10px;
   grid-template-areas: "i1 i3" "i2 i3";
+}
+.contacts__links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 25px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 .contacts .i1 {
   grid-area: i1;

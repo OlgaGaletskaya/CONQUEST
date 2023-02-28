@@ -38,7 +38,6 @@ body{
     font-size: 12px;
     line-height: 14px;
     letter-spacing: 0.05em;
-    
     display: inline-block;
 }
 .container{
@@ -106,7 +105,7 @@ body{
     }
     &__inner{
         @include flex();
-        height: calc(100vh - 80px);
+        height: 769px;
         font-weight: 300;
         font-size: 14px;
         line-height: 21px;
@@ -141,6 +140,10 @@ body{
         width: 56%;
         position: relative;
         z-index: 2;
+        & img{
+            margin-top: -24px;
+            height: calc(100% + 48px);
+        }
     }
     &__price, &__diameter{
         position: absolute;
@@ -285,13 +288,14 @@ body{
 .contacts{
     padding-top: 81px;
     padding-bottom: 90px;
+    
     &__inner{
         @include flex();
+        position: relative;
         font-weight: 400;
-font-size: 16px;
-line-height: 27px;
-
-color: #444240;
+        font-size: 16px;
+        line-height: 27px;
+        color: #444240;
     }
     &__gallery{
         display: grid;
@@ -299,6 +303,12 @@ color: #444240;
         grid-template-areas:
         "i1 i3"
         'i2 i3';
+    }
+    &__links{
+        @include flex($gap: 25px);
+        position: absolute;
+        bottom: 0;
+        left: 0;
     }
     .i1{
         grid-area: i1;
